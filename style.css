@@ -134,16 +134,18 @@ main {
     color: white;
 }
 footer {
-    width: 50%;
+    width: 700px;
     text-align: center;
 }
 footer img{
-    text-align: center;
     width: 5%;
-    margin: 3rem 0.5rem;
+    margin: 3rem 1rem;
 }
 /* PARTE RESPONSIVE */
 @media screen and (max-width:480px){
+    #mensaje-error {
+        width: 90%;
+    }
     main,.input-texto textarea{
         width: 100%;
     }
