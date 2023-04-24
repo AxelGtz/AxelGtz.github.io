@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1><img  src="imagenes/Logo.png" alt=""></h1>
+    </header>
+
+    <main>
+      <section class="input-texto">
+        <p id="mensaje-error">No puede enviar un mensaje vacio!</p>
+        <textarea cols="20" rows="5" id="input-texto" autofocus placeholder="Ingrese el texto aquí"></textarea>
+      </section>
+      
+      <section class="texto-encriptado" id="texto-encriptado">
+        <textarea id="area-texto" class="mostrar-texto"cols="20" rows="7" disabled > Hola </textarea>
+        <input class="btn-copiar" type="button" value="Copiar" id="btn-copiar">
+        
+        <div id="bloque-sinmensaje">
+          <img class="img-muñeco" src="imagenes/Muñeco.png" alt="">
+          <p id="sin-mensaje">Ningún mensaje fue encontrado</p>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+      </section>
+
+      <div class="botones">
+       <p> <span class="exclamacion">!</span> Solo letras minusculas y sin acentos</p>
+       <input class="btn-encriptar" type="button" value="Encriptar" id="boton-encriptar">
+       <input class="btn-desencriptar" type="button" value="Desencriptar" id="boton-desencriptar">
+      </div>
+      <footer>
+        <a href="https://www.linkedin.com/in/axel-gutierrez-a39515181/"><img src="imagenes/linkedin.png" alt=""></a>
+        <a href="https://github.com/AxelGtz"><img src="imagenes/25231.png" alt=""> </a>
+      </footer>
+  </body>
+
+  <script src="logica.js"></script>
+</html>
